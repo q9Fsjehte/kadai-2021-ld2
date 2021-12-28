@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+
+    </head>
+        <style>
+            button {
+                color: red;
+                background-color: cornsilk;
+                font-size: 33px;
+                margin: 20px;
+                padding: 10px 30px 20px;
+                border-radius: 10px;
+            }
+            button:hover{
+                color: blue;
+                background-color: whitesmoke;
+            }
+        </style>
+    <body>
+        <h1>おみくじプログラム（課題8のデモ）</h1>
+        <button id="omikuji">おみくじを引く</button>
+        <script>
+            const omikuji = document.getElementById("omikuji")
+            omikuji.addEventListener("click", () => {
+                //大吉・中吉・小吉を区分する
+                const value = Math.random()
+                if (value > 0.9){
+                    const result = document.createElement("dev")
+                    result.textContent = "大吉です！"
+                    document.body.appendChild(result)
+                    alert("大吉です！")
+                }else if (value > 0.2){
+                    const result = document.createElement("dev")
+                    result.textContent = "中吉です。"
+                    document.body.appendChild(result)
+                    alert("中吉です。")
+                }else {
+                    const result = document.createElement("dev")
+                    result.textContent = "小吉です。"
+                    document.body.appendChild(result)
+                    alert("小吉です。")
+                }
+            })
+        </script>
+    </body>
+</html>
