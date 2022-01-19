@@ -1,0 +1,1 @@
+(()=>{var o={902:o=>{o.exports=()=>{console.log("Hello Module A!")}},78:o=>{o.exports=()=>{console.log("Hello Module B!")}}},e={};function r(l){var t=e[l];if(void 0!==t)return t.exports;var s=e[l]={exports:{}};return o[l](s,s.exports,r),s.exports}(()=>{const o=r(902),e=r(78);o(),e()})()})();
